@@ -6,11 +6,15 @@ use std::any::Any;
 use std::sync::Arc;
 
 mod bbr;
+mod copa;
 mod cubic;
+mod cubic_enhanced;
 mod new_reno;
 
 pub use bbr::{Bbr, BbrConfig};
+pub use copa::{Copa, CopaConfig};
 pub use cubic::{Cubic, CubicConfig};
+pub use cubic_enhanced::{CubicEnhanced, CubicEnhancedConfig};
 pub use new_reno::{NewReno, NewRenoConfig};
 
 /// Common interface for different congestion controllers

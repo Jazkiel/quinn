@@ -386,7 +386,7 @@ impl Default for TransportConfig {
             #[cfg(test)]
             deterministic_packet_numbers: false,
 
-            congestion_controller_factory: Arc::new(congestion::CubicConfig::default()),
+            congestion_controller_factory: Arc::new(congestion::CopaConfig::default()),
 
             enable_segmentation_offload: true,
 
